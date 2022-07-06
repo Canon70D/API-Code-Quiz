@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    background-color: aliceblue;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(210, 231, 250);
+    color: black;
+    margin-bottom: 50px;
+    padding: 20px;
+    font-size: 22px;
+}
+
+#highScore:hover {
+    color: rgb(0, 48, 90);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#main-section {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin: 20px 20% 50px;
+}
+
+#main-section > * {
+    margin: 20px 5%;
+    align-self: center;
+}
+
+#title {
+    font-size: 200%
+}
+
+#question {
+    font-size: 120%;
+    text-align: justify;
+}
+
+button {
+    border: solid black 3px;
+    padding: 10px;
+    font-size: 110%;
+}
+
+button:hover {
+    color: white;
+    background-color:rgb(0, 48, 90);
+    border-color: rgb(0, 48, 90);
+    cursor: pointer;
+}
+
+#restart, #resetScores, #buttonNew {
+    align-self: start;
+    width: 25%;
+
+}
+
+#initials {
+    margin: 20px;
+    padding: 20px;
+}
+
+footer {
+    background-color: rgb(210, 231, 250);
+    text-align: center;
+    font-size: 150%;
+}
+
+@media screen and (max-width: 690px) {
+    header {
+        justify-content: space-between;
+    }
+
+    #main-section {
+        margin: 75px 20% 20px;
+        background-color: rgb(87, 165, 233);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        justify-content: space-between;
+    }
+
+    #main-section {
+        margin: 75px 20% 20px;
+        background-color: rgb(87, 165, 233);
+    }
+}
